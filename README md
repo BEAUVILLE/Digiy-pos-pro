@@ -1,26 +1,197 @@
-# 🦅 DIGIY POS — Démo Boutique Vêtements
-### Caisse de démonstration (publique) • 0% commission • Paiement direct
+ GUIDE UTILISATEUR
+🔐 ACTIVATION
+Mode Démo (Gratuit)
+1. Ouvrir le POS
+2. Cliquer "Essayer en Mode Démo"
+3. ✅ Accès immédiat 14 jours / 30 ventes
+Mode PRO (Licence)
+1. Ouvrir le POS
+2. Entrer code: DIGIY-XXXX-XXXX
+3. Cliquer "Activer la Licence"
+4. ✅ Validation instantanée
+🛒 UTILISER LA CAISSE
+Vendre un Produit
+1. Cliquer sur le produit → Ajouté au panier
+2. Modifier quantité avec +/-
+3. Vérifier le total
+4. Cliquer "Valider la Vente"
+5. ✅ Stock mis à jour automatiquement
+Rechercher un Produit
+→ Taper dans la barre de recherche
+→ Ou filtrer par catégorie
+→ Résultats instantanés
+Vider le Panier
+→ Cliquer "Vider" (en haut à droite du panier)
+→ Confirmation → ✅ Panier vidé
+📊 CONSULTER L'HISTORIQUE
+1. Onglet "Historique"
+2. Voir toutes les ventes
+3. Filtrer par date/recherche
+4. Cliquer sur une vente → Détails complets
+⚙️ ADMINISTRATION
+Modifier Infos Boutique
+1. Onglet "Administration"
+2. Section "Informations Boutique"
+3. Modifier nom/adresse/téléphone
+4. Cliquer "Enregistrer"
+Ajouter un Produit
+1. Section "Ajouter Produit"
+2. Remplir: Nom, Catégorie, Prix, Stock
+3. Cliquer "Ajouter"
+4. ✅ Produit disponible immédiatement
+Modifier un Produit
+1. Section "Gestion des Produits"
+2. Cliquer icône "Crayon" sur le produit
+3. Modifier les infos
+4. Cliquer "Enregistrer"
+Supprimer un Produit
+1. Cliquer icône "Poubelle"
+2. Confirmer
+3. ✅ Produit supprimé
+Exporter les Données
+1. Section "Sauvegarde"
+2. Cliquer "Exporter les Données"
+3. ✅ Fichier JSON téléchargé
+4. Conserver pour backup
 
-Cette version est une **caisse de démo** pensée pour présenter DIGIY POS à un client **sans exposer** une boutique réelle.
-Produits, prix, stocks et tickets sont **fictifs**.
+🔐 SYSTÈME DE LICENCE
+Format du Code
+DIGIY-XXXX-XXXX
 
-> Objectif : montrer l’expérience, pas les données d’un vrai commerce.
+Exemple: DIGIY-A7F3-B2E9
+Validation
+✅ Vérification format
+✅ Requête Supabase temps réel
+✅ Check status 'active'
+✅ Vérification expiration
+États Possibles
+🟢 active    → Licence valide
+🔴 expired   → Licence expirée
+🟠 suspended → Licence suspendue (impayé)
+Obtenir une Licence
+Option 1: WhatsApp (Recommandé)
+📱 +221 77 134 28 89
+Message: "Bonjour, je veux activer DIGIY POS PRO"
+Option 2: Via l'Application
+→ Écran upgrade → "Contacter sur WhatsApp"
+→ Message pré-rempli envoyé
+→ Support répond en < 30 min
+Processus d'Activation
+1. Client demande licence (WhatsApp/Tel)
+2. DIGIY génère code via Supabase
+3. Client paie 12,900 FCFA (Wave/OM)
+4. DIGIY active le code
+5. Client entre code dans le POS
+6. ✅ Activation instantanée
+Renouvellement
+→ Notification 7 jours avant expiration
+→ Paiement 12,900 FCFA
+→ Expiration prolongée +30 jours
+→ Pas de coupure si paiement à temps
 
----
+💡 SUPPORT & CONTACT
+📞 Support Client
+WhatsApp (Prioritaire)
+📱 +221 77 134 28 89
+Disponibilité: Lun-Sam 8h-20h
+Réponse: < 30 minutes
+Téléphone
+📞 +221 77 134 28 89
+Horaires: Lun-Sam 9h-18h
+🐛 Signaler un Bug
+Via WhatsApp avec:
+- Screenshot du problème
+- Description étape par étape
+- Appareil utilisé (mobile/desktop)
+- Navigateur (Chrome/Safari/Firefox)
+💬 Demande de Fonctionnalité
+Via WhatsApp:
+"[SUGGESTION] Titre de la fonctionnalité
+Description détaillée..."
+📚 Documentation
+README.md    → Guide complet (ce fichier)
+Code source  → Commenté en détail
+Video tuto   → À venir sur YouTube
 
-## ✅ Fonctionnalités
+🔧 DÉPANNAGE
+Problème: Code licence invalide
+✅ Vérifier le format: DIGIY-XXXX-XXXX
+✅ Vérifier connexion internet
+✅ Contacter le support si persiste
+Problème: Produits ne s'affichent pas
+✅ Vider le cache navigateur (Ctrl+Maj+Suppr)
+✅ Recharger la page (F5)
+✅ Vérifier console erreurs (F12)
+Problème: Données perdues
+✅ Les données sont dans localStorage
+✅ Ne pas vider cache si non sauvegardé
+✅ Toujours exporter régulièrement
+Problème: POS lent
+✅ Trop de produits? → Paginer
+✅ Historique lourd? → Exporter/archiver
+✅ Navigateur ancien? → Mettre à jour
 
-- 🛍️ Catalogue produits (Homme / Femme / Enfant / Accessoires)
-- 🎨 Variantes **taille** + **couleur** (chips)
-- 🧺 Panier : + / − / retirer
-- 🎯 Remise (%) appliquée au panier
-- 💳 Paiement (démo) : **Wave / Cash / Carte**
-- 🧾 Ticket **imprimable** (format thermique 72mm)
-- 📚 Historique (12 derniers) via `localStorage`
-- 🧹 Réinitialisation complète (panier + historique)
-- 📱 Mobile-first (présentation pro sur téléphone)
+📊 FEUILLE DE ROUTE
+Version 1.1 (Q1 2025)
+🔄 Synchronisation cloud automatique
+👥 Multi-utilisateurs (caissiers)
+📧 Envoi reçus par email/SMS
+📈 Dashboard statistiques avancées
+Version 1.2 (Q2 2025)
+🖨️ Impression tickets (imprimantes thermiques)
+📱 Application mobile native (iOS/Android)
+🔗 Intégration Wave/Orange Money API
+💳 Paiement en ligne dans le POS
+Version 2.0 (Q3 2025)
+🏢 Mode multi-boutiques (gérer plusieurs points de vente)
+👨‍💼 Gestion employés + pointage
+📦 Gestion fournisseurs + commandes
+🤖 IA: Prédictions stock + recommandations
 
----
+📄 LICENCE & PROPRIÉTÉ
+© 2025 DIGIYLYFE - Tous droits réservés
 
-## 🗂️ Structure du projet
+Ce logiciel est propriétaire.
+Distribution, modification ou revente interdites sans autorisation.
+
+Pour licence commerciale ou partenariat:
+📧 contact@digiylyfe.com
+📱 +221 77 134 28 89
+
+🏆 POURQUOI CHOISIR DIGIY?
+💛 Vision Africaine
+Créé PAR des Africains POUR des Africains
+Comprend les défis locaux (connexion, paiements, support)
+Prix adaptés aux réalités économiques du continent
+🚀 Technologie Moderne
+100% web (fonctionne partout)
+Responsive (mobile + desktop)
+Offline-ready (pas besoin connexion permanente)
+Sécurisé (Supabase + encryption)
+💰 Modèle Équitable
+0% commission (garde 100% des revenus)
+Prix fixe transparent (12,900 FCFA/mois)
+Pas de coûts cachés
+Essai gratuit 14 jours
+🤝 Support Local
+Équipe basée au Sénégal
+Support WhatsApp en français/wolof
+Paiements locaux (Wave/OM)
+Comprend les besoins terrain
+
+🌍 REJOIGNEZ LA RÉVOLUTION DIGITALE AFRICAINE
+DIGIY POS PRO fait partie de l'écosystème DIGIYLYFE:
+🚗 DIGIY DRIVER    → Transport 0% commission
+🏨 DIGIY LOC       → Hébergement 0% commission
+🍽️ DIGIY RESTO     → Restauration 0% commission
+🛒 DIGIY MARKET    → E-commerce 0% commission
+💼 DIGIY JOBS      → Emploi 0% commission
+💰 DIGIY PAY       → Paiements sécurisés
+🏗️ DIGIY BUILD     → Construction
+🗺️ DIGIY NDIMBAL   → Carte pro Sénégal
+
+... et 10+ autres modules!
+Notre mission: Libérer l'Afrique des commissions abusives et donner le pouvoir digital aux entrepreneurs locaux.
+
+🦅 L'AIGLE ROYAL NE DEMANDE PAS LA PERMISSION DE VOLER!
 
